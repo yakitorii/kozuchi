@@ -65,3 +65,10 @@ class ActionController::TestRequest
   end
   alias_method_chain :session_options, :session_key
 end
+
+Capybara.configure do |config|
+  config.match = :one
+  config.exact_options = true
+  config.ignore_hidden_elements = true
+  config.visible_text_only = true
+end

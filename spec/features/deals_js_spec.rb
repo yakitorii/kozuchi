@@ -403,7 +403,7 @@ describe DealsController, :js => true do
         FactoryGirl.create(:general_deal, :date => Date.new(2012, 7, 10))
         visit "/deals/2012/7"
         click_link('削除')
-        page.driver.browser.switch_to.alert.accept
+        accept_alert
       end
       it do
         flash_notice.should have_content("削除しました。")
@@ -415,7 +415,7 @@ describe DealsController, :js => true do
         FactoryGirl.create(:complex_deal, :date => Date.new(2012, 7, 7))
         visit "/deals/2012/7"
         click_link "削除"
-        page.driver.browser.switch_to.alert.accept
+        accept_alert
       end
 
       it do
@@ -429,7 +429,7 @@ describe DealsController, :js => true do
         FactoryGirl.create(:balance_deal, :date => Date.new(2012, 7, 20))
         visit "/deals/2012/7"
         click_link('削除')
-        page.driver.browser.switch_to.alert.accept
+        accept_alert
       end
       it do
         flash_notice.should have_content("削除しました。")
