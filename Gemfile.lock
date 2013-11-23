@@ -67,7 +67,7 @@ GEM
       railties (>= 3.0.0)
     ffi (1.9.0)
     hike (1.2.3)
-    html5jp_graphs (0.0.1)
+    html5jp_graphs (0.0.2)
     http-cookie (1.0.1)
       domain_name (~> 0.5)
     i18n (0.6.4)
@@ -187,7 +187,7 @@ DEPENDENCIES
   coffee-rails
   dynamic_form
   factory_girl_rails (~> 4.0)
-  html5jp_graphs
+  html5jp_graphs (~> 0.0.2)
   i18n_generators
   jpmobile
   libv8 (~> 3.11.8.7)
